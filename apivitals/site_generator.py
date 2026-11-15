@@ -29,7 +29,7 @@ INDEX_HTML_TEMPLATE = """<!DOCTYPE html>
         </div>
       </div>
       <div class="nav-actions">
-        <a href="https://github.com/apivitals/apivitals" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a>
+        <a href="https://github.com/mohiuddin-khan-shiam/apivitals" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a>
         <a href="data/catalog.json" download class="btn btn-outline">Export JSON</a>
         <button id="themeToggle" class="btn btn-icon" aria-label="Toggle Dark/Light Mode">
           <span id="themeIcon">☀️</span>
@@ -114,7 +114,7 @@ INDEX_HTML_TEMPLATE = """<!DOCTYPE html>
   <footer class="footer">
     <div class="footer-container">
       <p>ApiVitals is 100% free and open source under the MIT License.</p>
-      <p>Data refreshed daily via GitHub Actions. <a href="https://github.com/apivitals/apivitals" target="_blank">Contribute an API</a> on GitHub.</p>
+      <p>Data refreshed daily via GitHub Actions. <a href="https://github.com/mohiuddin-khan-shiam/apivitals" target="_blank">Contribute an API</a> on GitHub.</p>
     </div>
   </footer>
 

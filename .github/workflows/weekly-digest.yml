@@ -18,6 +18,9 @@ jobs:
     name: Generate Weekly Digest & Release Notes
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    env:
+      PYTHONIOENCODING: "utf-8"
+      PYTHONUTF8: "1"
 
     steps:
       - name: Checkout repository

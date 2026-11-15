@@ -57,10 +57,10 @@ dev = [
 apivitals = "apivitals.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/OWNER_REPLACE/apivitals"
-Documentation = "https://github.com/OWNER_REPLACE/apivitals#readme"
-Issues = "https://github.com/OWNER_REPLACE/apivitals/issues"
-Repository = "https://github.com/OWNER_REPLACE/apivitals"
+Homepage = "https://github.com/mohiuddin-khan-shiam/apivitals"
+Documentation = "https://github.com/mohiuddin-khan-shiam/apivitals#readme"
+Issues = "https://github.com/mohiuddin-khan-shiam/apivitals/issues"
+Repository = "https://github.com/mohiuddin-khan-shiam/apivitals"
 
 [tool.ruff]
 line-length = 100

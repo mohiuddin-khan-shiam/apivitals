@@ -5,6 +5,16 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+# Ensure UTF-8 output across all platforms, including Windows consoles with legacy encodings
+if sys.platform == "win32":
+    try:
+        if hasattr(sys.stdout, "reconfigure"):
+            sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+        if hasattr(sys.stderr, "reconfigure"):
+            sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
 import click
 from rich.console import Console
 from rich.panel import Panel
@@ -33,7 +43,7 @@ from apivitals.storage import (
     update_history,
 )
 
-console = Console()
+console = Console(legacy_windows=False)
 
 
 @click.group(invoke_without_command=True)
@@ -85,11 +95,11 @@ def validate_command(apis_dir: str) -> None:
     if errors:
         console.print(f"[bold red]Validation failed with {len(errors)} error(s):[/bold red]")
         for path, err in errors:
-            console.print(f"  [red]✗[/red] {path}: {err}")
+            console.print(f"  [red][X][/red] {path}: {err}")
         sys.exit(1)
     else:
         console.print(
-            f"[bold green]✓ All {len(yaml_files)} API definitions are valid![/bold green]"
+            f"[bold green][OK] All {len(yaml_files)} API definitions are valid![/bold green]"
         )
 
 
@@ -228,7 +238,7 @@ def probe_command(api_id: str | None, apis_dir: str) -> None:
             if s.state == "healthy"
             else ("[yellow]DEGRADED[/yellow]" if s.state == "degraded" else "[red]OFFLINE[/red]")
         )
-        cors_str = "[green]✓[/green]" if s.cors_supported else "[dim]✗[/dim]"
+        cors_str = "[green]Yes[/green]" if s.cors_supported else "[dim]No[/dim]"
         code_str = str(s.status_code) if s.status_code else "-"
         table.add_row(s.name, state_str, f"{s.latency_ms} ms", code_str, cors_str)
 
@@ -306,16 +316,16 @@ def export_command(fmt: str, apis_dir: str, output_dir: str) -> None:
     if fmt in ("json", "all"):
         export_json(catalog, summary, output_dir=output_dir)
         console.print(
-            f"[green]✓ Exported {output_dir}/catalog.json & {output_dir}/status.json[/green]"
+            f"[green][OK] Exported {output_dir}/catalog.json & {output_dir}/status.json[/green]"
         )
 
     if fmt in ("csv", "all"):
         export_csv(catalog, summary, output_path=f"{output_dir}/catalog.csv")
-        console.print(f"[green]✓ Exported {output_dir}/catalog.csv[/green]")
+        console.print(f"[green][OK] Exported {output_dir}/catalog.csv[/green]")
 
     if fmt in ("sqlite", "all"):
         export_sqlite(catalog, summary, history, output_path=f"{output_dir}/catalog.db")
-        console.print(f"[green]✓ Exported {output_dir}/catalog.db[/green]")
+        console.print(f"[green][OK] Exported {output_dir}/catalog.db[/green]")
 
 
 @cli.command("update")
@@ -392,7 +402,7 @@ def update_command(apis_dir: str, data_dir: str, site_dir: str, skip_probes: boo
     build_site(catalog, summary, output_dir=site_dir, assets_dir="assets", data_dir=data_dir)
     console.print(f"[green]Built static dashboard in '{site_dir}' for GitHub Pages.[/green]")
 
-    console.print("[bold green]✓ ApiVitals pipeline completed successfully![/bold green]")
+    console.print("[bold green][OK] ApiVitals pipeline completed successfully![/bold green]")
 
 
 @cli.command("digest")
@@ -423,7 +433,7 @@ def digest_command(apis_dir: str, status_file: str, reports_dir: str) -> None:
     out_file = rep_dir / filename
     out_file.write_text(content, encoding="utf-8")
 
-    console.print(f"[bold green]✓ Generated weekly digest at {out_file}[/bold green]")
+    console.print(f"[bold green][OK] Generated weekly digest at {out_file}[/bold green]")
 
 
 def main() -> None:

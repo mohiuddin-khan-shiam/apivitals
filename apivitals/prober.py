@@ -21,7 +21,9 @@ from apivitals.models import (
     StatusState,
 )
 
-DEFAULT_USER_AGENT = "ApiVitals-HealthCheck/1.0 (+https://github.com/apivitals/apivitals)"
+DEFAULT_USER_AGENT = (
+    "ApiVitals-HealthCheck/1.0 (+https://github.com/mohiuddin-khan-shiam/apivitals)"
+)
 DEFAULT_TIMEOUT_SECONDS = 10.0
 MAX_CONCURRENT_PROBES = 10
 

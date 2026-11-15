@@ -33,7 +33,7 @@ git add .
 git commit -m "feat: initial release of ApiVitals v0.1.0"
 
 # Add your GitHub remote
-git remote add origin https://github.com/YOUR_GITHUB_USERNAME/apivitals.git
+git remote add origin https://github.com/mohiuddin-khan-shiam/apivitals.git
 
 # Push to main branch
 git push -u origin main
@@ -56,14 +56,14 @@ To make automated daily updates appear under your profile:
 
 ### Set the Variables in Your Repository:
 1. In your `apivitals` repository on GitHub, navigate to:
-   **Settings** &rarr; **Secrets and variables** &rarr; **Actions** &rarr; **Variables** tab (not Secrets).
+   **Settings** &rarr; **Secrets and variables** &rarr; **Actions** &rarr; **Variables** tab (make sure it's the **Variables** tab, not Secrets).
 2. Click **New repository variable**:
    - **Name**: `GIT_AUTHOR_NAME`
-   - **Value**: Your real name or GitHub username (e.g., `Jane Doe`)
+   - **Value**: `Mohiuddin Khan Shiam` (or simply `mohiuddin-khan-shiam` — do not type "your name/")
    - Click **Add variable**.
 3. Click **New repository variable** again:
    - **Name**: `GIT_AUTHOR_EMAIL`
-   - **Value**: Your noreply email (e.g., `12345678+username@users.noreply.github.com`)
+   - **Value**: `147746955+mohiuddin-khan-shiam@users.noreply.github.com`
    - Click **Add variable**.
 
 > 💡 *Now, every automated daily update commit will be authored by your account, automatically earning you daily contribution activity on your profile!*
@@ -85,18 +85,37 @@ To make automated daily updates appear under your profile:
    Select **GitHub Actions** (not "Deploy from a branch").
 3. The deployment workflow (`.github/workflows/pages.yml`) will handle everything automatically.
 
-### 3. Enable Discussions (Recommended)
+### 3. Important Note Regarding "Your main branch isn't protected"
+GitHub displays a warning recommending branch protection rules. For **ApiVitals**, please keep this critical detail in mind:
+- **Do NOT enable** "Require a pull request before merging" on `main` without adding a bypass.
+- **Why?** Our automated workflow (`daily-update.yml`) runs on a daily schedule and pushes updated health statistics and benchmarks directly to `main`. If you require pull requests to push to `main`, GitHub Actions will be blocked with a permissions error when pushing daily data.
+- **Recommended Protection (if desired)**: If you want protection, go to **Settings** &rarr; **Rules** &rarr; **Rulesets** &rarr; **New branch ruleset**:
+  - Name: `Protect main`
+  - Target branches: `Include default branch`
+  - Check **"Block force pushes"** and **"Restrict deletions"**.
+  - Leave "Require a pull request before merging" **unchecked**.
+
+### 4. Enable Discussions (Recommended)
 1. Navigate to: **Settings** &rarr; **General** &rarr; Scroll down to **Features**.
 2. Check the box for **Discussions**.
 
 ---
 
-## Step 5: Trigger the First Daily Run & Verify
+## Step 5: How to Trigger the Daily Run Manually
 
-1. Go to the **Actions** tab in your repository.
-2. In the left sidebar, click on **"Daily API Health & Benchmark Update"**.
-3. Click the **"Run workflow"** dropdown on the right, select branch `main`, and click **Run workflow**.
-4. Wait approximately 60–90 seconds for the job to complete.
+To test the automated pipeline right now:
+
+1. Go to your repository on GitHub: [https://github.com/mohiuddin-khan-shiam/apivitals](https://github.com/mohiuddin-khan-shiam/apivitals)
+2. Click the **Actions** tab at the top.
+3. In the left sidebar list of workflows, click on **"Daily API Health & Benchmark Update"** (or open: [https://github.com/mohiuddin-khan-shiam/apivitals/actions/workflows/daily-update.yml](https://github.com/mohiuddin-khan-shiam/apivitals/actions/workflows/daily-update.yml)).
+4. On the right side above the run history, look for the gray box that says: **"This workflow has a `workflow_dispatch` event trigger."**
+5. Click the **Run workflow** dropdown button.
+6. Keep `Branch: main` selected and click the green **Run workflow** button.
+7. Refresh the page after 5 seconds: you will see a yellow running circle for your manual run.
+8. Wait ~60 seconds:
+   - The job will turn into a green checkmark `✓`.
+   - Go to the **Code** tab: you will see a fresh commit authored by you: `data: update API health vitals and benchmarks (YYYY-MM-DD)`.
+   - Check your profile to see the new green contribution square!
 5. Once the run finishes with a green checkmark:
    - Go to your repository code tab.
    - Look at the latest commit: you will see a conventional commit formatted as:

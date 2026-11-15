@@ -4,12 +4,12 @@
 
 # ApiVitals
 
-[![CI](https://github.com/apivitals/apivitals/actions/workflows/ci.yml/badge.svg)](https://github.com/apivitals/apivitals/actions/workflows/ci.yml)
-[![Daily Health Updates](https://github.com/apivitals/apivitals/actions/workflows/daily-update.yml/badge.svg)](https://github.com/apivitals/apivitals/actions/workflows/daily-update.yml)
+[![CI](https://github.com/mohiuddin-khan-shiam/apivitals/actions/workflows/ci.yml/badge.svg)](https://github.com/mohiuddin-khan-shiam/apivitals/actions/workflows/ci.yml)
+[![Daily Health Updates](https://github.com/mohiuddin-khan-shiam/apivitals/actions/workflows/daily-update.yml/badge.svg)](https://github.com/mohiuddin-khan-shiam/apivitals/actions/workflows/daily-update.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg)](LICENSE)
 [![Python: 3.10+](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue.svg)](https://python.org)
 [![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
-[![Dashboard](https://img.shields.io/badge/live-dashboard-cyan.svg)](https://apivitals.dev)
+[![Dashboard](https://img.shields.io/badge/live-dashboard-cyan.svg)](https://mohiuddin-khan-shiam.github.io/apivitals)
 
 > **The living health radar, latency benchmark, and curated directory of free public APIs.**
 
@@ -80,7 +80,7 @@ pip install apivitals
 ### Option 2: Clone and Run Directly
 
 ```bash
-git clone https://github.com/apivitals/apivitals.git
+git clone https://github.com/mohiuddin-khan-shiam/apivitals.git
 cd apivitals
 uv sync
 ```
