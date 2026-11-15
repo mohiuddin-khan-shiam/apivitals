@@ -3,7 +3,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 67.21,
+      "latency_ms": 211.38,
       "status_code": 200
     }
   ],
@@ -11,7 +11,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 1026.28,
+      "latency_ms": 371.84,
       "status_code": 200
     }
   ],
@@ -19,7 +19,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 1504.84,
+      "latency_ms": 284.43,
       "status_code": 200
     }
   ],
@@ -27,7 +27,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 474.35,
+      "latency_ms": 180.69,
       "status_code": 200
     }
   ],
@@ -35,7 +35,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 168.66,
+      "latency_ms": 158.14,
       "status_code": 200
     }
   ],
@@ -43,7 +43,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 740.61,
+      "latency_ms": 155.6,
       "status_code": 200
     }
   ],
@@ -51,7 +51,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 1102.97,
+      "latency_ms": 417.23,
       "status_code": 200
     }
   ],
@@ -59,7 +59,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 912.27,
+      "latency_ms": 247.47,
       "status_code": 200
     }
   ],
@@ -67,7 +67,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 33.95,
+      "latency_ms": 102.65,
       "status_code": 200
     }
   ],
@@ -75,23 +75,23 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 55.28,
+      "latency_ms": 228.75,
       "status_code": 200
     }
   ],
   "binance-ticker": [
     {
       "date": "2026-11-15",
-      "is_healthy": true,
-      "latency_ms": 190.98,
-      "status_code": 200
+      "is_healthy": false,
+      "latency_ms": 89.22,
+      "status_code": 451
     }
   ],
   "coingecko-public": [
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 321.75,
+      "latency_ms": 124.18,
       "status_code": 200
     }
   ],
@@ -99,7 +99,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 64.7,
+      "latency_ms": 550.77,
       "status_code": 200
     }
   ],
@@ -107,7 +107,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 697.64,
+      "latency_ms": 517.68,
       "status_code": 200
     }
   ],
@@ -115,7 +115,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 150.67,
+      "latency_ms": 111.46,
       "status_code": 200
     }
   ],
@@ -123,7 +123,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 45.39,
+      "latency_ms": 810.04,
       "status_code": 200
     }
   ],
@@ -131,7 +131,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 54.33,
+      "latency_ms": 81.19,
       "status_code": 200
     }
   ],
@@ -139,7 +139,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": false,
-      "latency_ms": 644.12,
+      "latency_ms": 157.55,
       "status_code": 404
     }
   ],
@@ -147,7 +147,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 760.78,
+      "latency_ms": 127.91,
       "status_code": 200
     }
   ],
@@ -155,7 +155,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 279.32,
+      "latency_ms": 637.86,
       "status_code": 200
     }
   ],
@@ -163,7 +163,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 3499.36,
+      "latency_ms": 2414.08,
       "status_code": 200
     }
   ],
@@ -171,7 +171,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 2109.21,
+      "latency_ms": 802.58,
       "status_code": 200
     }
   ],
@@ -179,7 +179,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": false,
-      "latency_ms": 10025.22,
+      "latency_ms": 10046.06,
       "status_code": null
     }
   ],
@@ -187,7 +187,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 472.15,
+      "latency_ms": 62.89,
       "status_code": 200
     }
   ],
@@ -195,7 +195,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 697.56,
+      "latency_ms": 157.33,
       "status_code": 200
     }
   ],
@@ -203,7 +203,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 808.41,
+      "latency_ms": 1486.27,
       "status_code": 200
     }
   ],
@@ -211,7 +211,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 805.04,
+      "latency_ms": 239.17,
       "status_code": 200
     }
   ],
@@ -219,7 +219,7 @@
     {
       "date": "2026-11-15",
       "is_healthy": true,
-      "latency_ms": 376.0,
+      "latency_ms": 112.88,
       "status_code": 200
     }
   ]
