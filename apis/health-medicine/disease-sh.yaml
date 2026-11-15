@@ -1,0 +1,21 @@
+id: disease-sh
+name: Disease.sh Open Disease Data
+description: Open API for current disease outbreak tracking and global vaccine statistics.
+category: Health & Medicine
+homepage: https://disease.sh
+documentation: https://disease.sh/docs/
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Global Summary
+    path: https://disease.sh/v3/covid-19/all
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - health
+  - epidemiology
+  - global
+license: GPL-3.0
+rate_limit: Polite non-commercial use

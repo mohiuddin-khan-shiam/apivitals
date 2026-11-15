@@ -1,0 +1,22 @@
+id: open-food-facts
+name: Open Food Facts
+description: Collaborative database of food products with ingredients, allergens, and nutrition facts.
+category: Food & Nutrition
+homepage: https://world.openfoodfacts.org
+documentation: https://openfoodfacts.github.io/api-documentation/
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Nutella Barcode Lookup
+    path: https://world.openfoodfacts.org/api/v2/product/3017620422003.json
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - food
+  - nutrition
+  - allergens
+  - barcodes
+license: ODbL 1.0
+rate_limit: 100 requests/minute

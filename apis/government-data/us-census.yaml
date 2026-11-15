@@ -1,0 +1,22 @@
+id: us-census
+name: US Census Bureau Demographic Data
+description: Official public population and demographic statistics from the United States Census Bureau.
+category: Government & Open Data
+homepage: https://www.census.gov
+documentation: https://www.census.gov/data/developers/data-sets.html
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: 2020 Census Variables
+    path: https://api.census.gov/data/2020/dec/pl/variables.json
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - census
+  - demographics
+  - government
+  - statistics
+license: Public Domain (US Government)
+rate_limit: 500 requests/day unauthenticated

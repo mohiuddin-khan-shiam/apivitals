@@ -1,0 +1,21 @@
+id: poetrydb
+name: PoetryDB
+description: Extensive database of classic public domain poetry searchable by author, title, and lines.
+category: Books & Literature
+homepage: https://poetrydb.org
+documentation: https://github.com/thundercomb/poetrydb#readme
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Random Poem
+    path: https://poetrydb.org/random
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - poetry
+  - literature
+  - art
+license: MIT
+rate_limit: Polite non-commercial use

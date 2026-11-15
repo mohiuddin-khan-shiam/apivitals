@@ -1,0 +1,21 @@
+id: open-trivia
+name: Open Trivia Database
+description: Free user-contributed trivia question database for games and quizzes.
+category: Entertainment & Media
+homepage: https://opentdb.com
+documentation: https://opentdb.com/api_config.php
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Random Trivia Question
+    path: https://opentdb.com/api.php?amount=1
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - trivia
+  - quiz
+  - games
+license: CC-BY-SA-4.0
+rate_limit: 1 request/5 seconds

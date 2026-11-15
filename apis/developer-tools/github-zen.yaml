@@ -1,0 +1,20 @@
+id: github-zen
+name: GitHub Zen API
+description: Lightweight API returning GitHub design philosophy aphorisms.
+category: Developer Tools
+homepage: https://github.com
+documentation: https://docs.github.com/en/rest/meta/meta#get-the-zen-of-github
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Zen of GitHub
+    path: https://api.github.com/zen
+    method: GET
+    expected_status: 200
+tags:
+  - github
+  - developer
+  - philosophy
+license: GitHub Terms
+rate_limit: 60 requests/hour unauthenticated

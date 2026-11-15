@@ -1,0 +1,22 @@
+id: spacex-api
+name: SpaceX Public REST API
+description: Open source REST API for historical rocket launches, capsules, and orbital mission data.
+category: Science & Space
+homepage: https://github.com/r-spacex/SpaceX-API
+documentation: https://github.com/r-spacex/SpaceX-API/blob/master/docs/README.md
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Latest Launch
+    path: https://api.spacexdata.com/v4/launches/latest
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - space
+  - rockets
+  - spacex
+  - aerospace
+license: MIT
+rate_limit: 50 requests/second

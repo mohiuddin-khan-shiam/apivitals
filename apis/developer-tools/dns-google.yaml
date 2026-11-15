@@ -1,0 +1,21 @@
+id: dns-google
+name: Google Public DNS over HTTPS
+description: Fast, private DNS resolution via JSON-formatted DNS-over-HTTPS (DoH).
+category: Developer Tools
+homepage: https://developers.google.com/speed/public-dns
+documentation: https://developers.google.com/speed/public-dns/docs/doh/json
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Resolve Example.com
+    path: https://dns.google/resolve?name=example.com&type=A
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - dns
+  - networking
+  - infrastructure
+license: Google Terms
+rate_limit: Polite non-commercial use

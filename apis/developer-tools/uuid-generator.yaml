@@ -1,0 +1,21 @@
+id: uuid-generator
+name: UUIDTools Generator
+description: REST API for generating random RFC 4122 compliant UUIDs (v1, v4).
+category: Developer Tools
+homepage: https://www.uuidtools.com
+documentation: https://www.uuidtools.com/docs
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Generate UUID v4
+    path: https://www.uuidtools.com/api/generate/v4
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - uuid
+  - developer-tools
+  - identifiers
+license: Free Public API
+rate_limit: Polite non-commercial use

@@ -1,0 +1,80 @@
+name: Repository Maintenance & Stats Sync
+
+on:
+  schedule:
+    # Runs weekly on Wednesdays at 04:27 UTC
+    - cron: '27 4 * * 3'
+  workflow_dispatch:
+
+concurrency:
+  group: maintenance
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  maintenance:
+    name: Health Check, Dependency Audit & Stats Sync
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install uv package manager
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --extra dev
+
+      - name: Stale data detection
+        run: |
+          if [ -f "data/status.json" ]; then
+            FILE_AGE=$(($(date +%s) - $(stat -c %Y data/status.json 2>/dev/null || stat -f %m data/status.json)))
+            if [ "$FILE_AGE" -gt 172800 ]; then
+              echo "::warning::data/status.json has not been refreshed in over 48 hours."
+            else
+              echo "Data freshness check passed: data/status.json is recent."
+            fi
+          fi
+
+      - name: Validate documentation links and YAML schemas
+        run: uv run apivitals validate
+
+      - name: Synchronize README performance stats
+        run: |
+          uv run python -c "
+          from apivitals.storage import compute_vitals_summary, load_catalog
+          from apivitals.models import ServiceStatus
+          from apivitals.digest import update_readme_stats
+          import json
+          data = json.load(open('data/status.json'))
+          summary = compute_vitals_summary([ServiceStatus.model_validate(s) for s in data.get('services', [])])
+          updated = update_readme_stats(summary, 'README.md')
+          print('README stats updated:', updated)
+          "
+
+      - name: Commit maintenance changes
+        env:
+          GIT_AUTHOR_NAME: ${{ vars.GIT_AUTHOR_NAME }}
+          GIT_AUTHOR_EMAIL: ${{ vars.GIT_AUTHOR_EMAIL }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No maintenance changes needed."
+            exit 0
+          fi
+
+          NAME="${GIT_AUTHOR_NAME:-github-actions[bot]}"
+          EMAIL="${GIT_AUTHOR_EMAIL:-github-actions[bot]@users.noreply.github.com}"
+          git config user.name "$NAME"
+          git config user.email "$EMAIL"
+
+          git add README.md
+          git commit -m "chore(maintenance): synchronize README stats and verify documentation ($(date -u +'%Y-%m-%d'))"
+          git push origin main

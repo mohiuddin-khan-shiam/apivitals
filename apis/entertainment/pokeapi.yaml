@@ -1,0 +1,21 @@
+id: pokeapi
+name: PokéAPI
+description: Highly structured RESTful Pokémon data covering species, moves, abilities, and types.
+category: Entertainment & Media
+homepage: https://pokeapi.co
+documentation: https://pokeapi.co/docs/v2
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Lookup Pikachu
+    path: https://pokeapi.co/api/v2/pokemon/pikachu
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - pokemon
+  - gaming
+  - entertainment
+license: BSD-3-Clause
+rate_limit: 100 requests/minute

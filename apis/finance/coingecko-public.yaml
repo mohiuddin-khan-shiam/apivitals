@@ -1,0 +1,21 @@
+id: coingecko-public
+name: CoinGecko Public Ping
+description: Independent cryptocurrency market data and health ping endpoint.
+category: Finance & Economics
+homepage: https://www.coingecko.com
+documentation: https://docs.coingecko.com/reference/ping-server
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Server Ping
+    path: https://api.coingecko.com/api/v3/ping
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - crypto
+  - bitcoin
+  - market-data
+license: Custom Free Tier
+rate_limit: 30 calls/minute

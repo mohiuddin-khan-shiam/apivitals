@@ -1,0 +1,22 @@
+id: openfda
+name: openFDA Drug Safety & Recalls
+description: Open health data platform providing access to FDA adverse event reports and recalls.
+category: Health & Medicine
+homepage: https://open.fda.gov
+documentation: https://open.fda.gov/apis/
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Drug Event Sample
+    path: https://api.fda.gov/drug/event.json?limit=1
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - fda
+  - medicine
+  - health
+  - pharmaceuticals
+license: CC0-1.0
+rate_limit: 240 requests/minute without key

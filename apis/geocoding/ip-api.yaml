@@ -1,0 +1,21 @@
+id: ip-api
+name: IP-API Geolocation
+description: Free IP geolocation API providing country, city, ISP, and coordinates for public IPv4/IPv6.
+category: Geocoding & Maps
+homepage: https://ip-api.com
+documentation: https://ip-api.com/docs
+auth: none
+https: false
+cors: true
+endpoints:
+  - name: IP Lookup Google DNS
+    path: http://ip-api.com/json/8.8.8.8
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - ip
+  - geolocation
+  - networking
+license: Proprietary Free Tier
+rate_limit: 45 requests/minute

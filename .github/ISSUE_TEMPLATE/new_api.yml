@@ -1,0 +1,48 @@
+name: 🌐 Suggest a Public API
+description: Suggest a new free public API to add to the ApiVitals directory.
+labels: ["new-api"]
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for expanding the ApiVitals catalog!
+  - type: input
+    id: api_name
+    attributes:
+      label: API Name
+      placeholder: "e.g., Cat Facts API"
+    validations:
+      required: true
+  - type: input
+    id: homepage
+    attributes:
+      label: Website / Documentation URL
+      placeholder: "https://catfact.ninja"
+    validations:
+      required: true
+  - type: dropdown
+    id: auth
+    attributes:
+      label: Authentication Required
+      options:
+        - "None (completely open)"
+        - "API Key (free tier available)"
+        - "OAuth"
+    validations:
+      required: true
+  - type: input
+    id: sample_endpoint
+    attributes:
+      label: Sample GET Endpoint
+      placeholder: "https://catfact.ninja/fact"
+    validations:
+      required: true
+  - type: dropdown
+    id: cors
+    attributes:
+      label: Supports CORS?
+      options:
+        - "Yes"
+        - "No"
+        - "Unknown"
+    validations:
+      required: true

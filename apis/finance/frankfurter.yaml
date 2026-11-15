@@ -1,0 +1,22 @@
+id: frankfurter
+name: Frankfurter Currency Rates
+description: Open-source foreign exchange reference rates published by the European Central Bank.
+category: Finance & Economics
+homepage: https://www.frankfurter.app
+documentation: https://www.frankfurter.app/docs/
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Latest EUR Rates
+    path: https://api.frankfurter.app/latest
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - forex
+  - currency
+  - ecb
+  - exchange-rates
+license: CC0-1.0
+rate_limit: Unrestricted polite use

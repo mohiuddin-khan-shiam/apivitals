@@ -1,0 +1,38 @@
+name: 🐛 Bug Report
+description: Report a bug in ApiVitals CLI, prober, or static dashboard.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to report an issue!
+  - type: input
+    id: version
+    attributes:
+      label: ApiVitals Version
+      description: What version of ApiVitals are you running? (Run `apivitals --version`)
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the Bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Command(s) you ran and expected vs actual behavior.
+      placeholder: |
+        1. Run `apivitals probe open-meteo`
+        2. Notice error ...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Info
+      description: OS version, Python version, terminal environment.
+      placeholder: "Ubuntu 24.04 / Python 3.12"

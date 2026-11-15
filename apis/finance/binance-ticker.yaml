@@ -1,0 +1,21 @@
+id: binance-ticker
+name: Binance Public Ticker
+description: Public spot market price ticker for top digital assets.
+category: Finance & Economics
+homepage: https://www.binance.com
+documentation: https://developers.binance.com/docs/binance-spot-api-docs
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: BTCUSDT Ticker
+    path: https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - crypto
+  - market-prices
+  - trading
+license: Proprietary Public Endpoint
+rate_limit: 1200 request weight/minute

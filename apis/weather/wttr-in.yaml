@@ -1,0 +1,20 @@
+id: wttr-in
+name: wttr.in Weather Service
+description: Console-oriented and JSON-capable weather forecast service.
+category: Weather & Climate
+homepage: https://wttr.in
+documentation: https://github.com/chubin/wttr.in
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: London JSON Weather
+    path: https://wttr.in/London?format=j1
+    method: GET
+    expected_status: 200
+tags:
+  - weather
+  - terminal
+  - climate
+license: Apache-2.0
+rate_limit: Polite non-commercial use

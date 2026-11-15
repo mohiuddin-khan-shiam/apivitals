@@ -1,0 +1,21 @@
+id: zippopotam
+name: Zippopotam.us
+description: Postal code and zip code lookup API covering over 60 countries.
+category: Geocoding & Maps
+homepage: https://www.zippopotam.us
+documentation: https://www.zippopotam.us
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Lookup US Beverly Hills
+    path: https://api.zippopotam.us/us/90210
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - postal-codes
+  - zipcodes
+  - geography
+license: CC-BY-3.0
+rate_limit: Unmetered polite use

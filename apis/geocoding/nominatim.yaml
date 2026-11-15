@@ -1,0 +1,22 @@
+id: nominatim
+name: OpenStreetMap Nominatim
+description: Search OpenStreetMap data by name and address (geocoding) and generate synthetic addresses.
+category: Geocoding & Maps
+homepage: https://nominatim.org
+documentation: https://nominatim.org/release-docs/latest/api/Overview/
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Search Paris
+    path: https://nominatim.openstreetmap.org/search?q=Paris&format=json&limit=1
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - geocoding
+  - osm
+  - coordinates
+  - maps
+license: ODbL 1.0
+rate_limit: 1 request/second

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="pulseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#a7f3d0" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="200" height="200" rx="44" fill="url(#bgGrad)" stroke="#334155" stroke-width="2" />
+
+  <!-- Outer Tech Ring -->
+  <circle cx="100" cy="100" r="76" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="4 8" opacity="0.6" />
+
+  <!-- API Braces (Stylized Left & Right) -->
+  <path d="M 54 65 C 42 65 42 85 42 90 C 42 95 34 100 30 100 C 34 100 42 105 42 110 C 42 115 42 135 54 135" 
+        fill="none" stroke="#64748b" stroke-width="4.5" stroke-linecap="round" />
+  <path d="M 146 65 C 158 65 158 85 158 90 C 158 95 166 100 170 100 C 166 100 158 105 158 110 C 158 115 158 135 146 135" 
+        fill="none" stroke="#64748b" stroke-width="4.5" stroke-linecap="round" />
+
+  <!-- Vitals Pulse Waveform -->
+  <path d="M 45 100 L 70 100 L 80 82 L 92 124 L 105 60 L 118 135 L 128 92 L 136 100 L 155 100" 
+        fill="none" stroke="url(#pulseGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" />
+
+  <!-- Realtime Node Indicator Dots -->
+  <circle cx="105" cy="60" r="4" fill="#38bdf8" />
+  <circle cx="118" cy="135" r="4" fill="#10b981" />
+</svg>

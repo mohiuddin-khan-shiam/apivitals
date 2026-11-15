@@ -1,0 +1,21 @@
+id: httpbin
+name: HTTPBin Test Suite
+description: HTTP request and response testing service for testing headers, status codes, and IP inspection.
+category: Developer Tools
+homepage: https://httpbin.org
+documentation: https://httpbin.org
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Get Request Echo
+    path: https://httpbin.org/get
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - testing
+  - http
+  - developer-tools
+license: MIT
+rate_limit: Polite non-commercial use

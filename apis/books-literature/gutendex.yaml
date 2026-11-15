@@ -1,0 +1,22 @@
+id: gutendex
+name: Gutendex Project Gutenberg Index
+description: Clean JSON web API for reading and querying public domain ebooks from Project Gutenberg.
+category: Books & Literature
+homepage: https://gutendex.com
+documentation: https://gutendex.com
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Search Shakespeare Books
+    path: https://gutendex.com/books/?search=shakespeare
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - books
+  - gutenberg
+  - public-domain
+  - literature
+license: GPL-3.0
+rate_limit: Polite non-abusive use

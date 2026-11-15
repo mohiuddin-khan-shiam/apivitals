@@ -1,0 +1,22 @@
+id: open-library
+name: Open Library Books API
+description: Comprehensive catalog of millions of books, authors, works, and editions from the Internet Archive.
+category: Books & Literature
+homepage: https://openlibrary.org
+documentation: https://openlibrary.org/developers/api
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: ISBN Lookup (Tolkien)
+    path: https://openlibrary.org/isbn/9780140328721.json
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - books
+  - library
+  - internet-archive
+  - isbn
+license: CC0-1.0
+rate_limit: Polite non-commercial use

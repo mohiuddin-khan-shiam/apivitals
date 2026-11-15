@@ -1,0 +1,56 @@
+name: Weekly Performance & Reliability Digest
+
+on:
+  schedule:
+    # Runs weekly on Sundays at 03:43 UTC
+    - cron: '43 3 * * 0'
+  workflow_dispatch:
+
+concurrency:
+  group: weekly-digest
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    name: Generate Weekly Digest & Release Notes
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install uv package manager
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --extra dev
+
+      - name: Generate weekly intelligence digest
+        run: uv run apivitals digest
+
+      - name: Commit and push weekly report
+        env:
+          GIT_AUTHOR_NAME: ${{ vars.GIT_AUTHOR_NAME }}
+          GIT_AUTHOR_EMAIL: ${{ vars.GIT_AUTHOR_EMAIL }}
+        run: |
+          if [ -z "$(git status --porcelain reports/)" ]; then
+            echo "No new digest generated."
+            exit 0
+          fi
+
+          NAME="${GIT_AUTHOR_NAME:-github-actions[bot]}"
+          EMAIL="${GIT_AUTHOR_EMAIL:-github-actions[bot]@users.noreply.github.com}"
+          git config user.name "$NAME"
+          git config user.email "$EMAIL"
+
+          git add reports/
+          git commit -m "docs(reports): publish weekly reliability digest ($(date -u +'%Y-W%U'))"
+          git push origin main

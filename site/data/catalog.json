@@ -1,0 +1,815 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-11-15T18:42:09.437637+00:00",
+  "total_apis": 28,
+  "categories": [
+    "Books & Literature",
+    "Developer Tools",
+    "Entertainment & Media",
+    "Finance & Economics",
+    "Food & Nutrition",
+    "Geocoding & Maps",
+    "Government & Open Data",
+    "Health & Medicine",
+    "Science & Space",
+    "Weather & Climate"
+  ],
+  "apis": [
+    {
+      "id": "bible-api",
+      "name": "Bible API Public Scripture",
+      "description": "Free public JSON API for retrieving public domain Bible passages and verses.",
+      "category": "Books & Literature",
+      "homepage": "https://bible-api.com",
+      "documentation": "https://bible-api.com",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Sample Scripture",
+          "path": "https://bible-api.com/john+3:16",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "scripture",
+        "religion",
+        "literature"
+      ],
+      "license": "Public Domain",
+      "rate_limit": "Polite non-commercial use"
+    },
+    {
+      "id": "gutendex",
+      "name": "Gutendex Project Gutenberg Index",
+      "description": "Clean JSON web API for reading and querying public domain ebooks from Project Gutenberg.",
+      "category": "Books & Literature",
+      "homepage": "https://gutendex.com",
+      "documentation": "https://gutendex.com",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Search Shakespeare Books",
+          "path": "https://gutendex.com/books/?search=shakespeare",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "books",
+        "gutenberg",
+        "public-domain",
+        "literature"
+      ],
+      "license": "GPL-3.0",
+      "rate_limit": "Polite non-abusive use"
+    },
+    {
+      "id": "open-library",
+      "name": "Open Library Books API",
+      "description": "Comprehensive catalog of millions of books, authors, works, and editions from the Internet Archive.",
+      "category": "Books & Literature",
+      "homepage": "https://openlibrary.org",
+      "documentation": "https://openlibrary.org/developers/api",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "ISBN Lookup (Tolkien)",
+          "path": "https://openlibrary.org/isbn/9780140328721.json",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "books",
+        "library",
+        "internet-archive",
+        "isbn"
+      ],
+      "license": "CC0-1.0",
+      "rate_limit": "Polite non-commercial use"
+    },
+    {
+      "id": "poetrydb",
+      "name": "PoetryDB",
+      "description": "Extensive database of classic public domain poetry searchable by author, title, and lines.",
+      "category": "Books & Literature",
+      "homepage": "https://poetrydb.org",
+      "documentation": "https://github.com/thundercomb/poetrydb#readme",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Random Poem",
+          "path": "https://poetrydb.org/random",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "poetry",
+        "literature",
+        "art"
+      ],
+      "license": "MIT",
+      "rate_limit": "Polite non-commercial use"
+    },
+    {
+      "id": "github-zen",
+      "name": "GitHub Zen API",
+      "description": "Lightweight API returning GitHub design philosophy aphorisms.",
+      "category": "Developer Tools",
+      "homepage": "https://github.com",
+      "documentation": "https://docs.github.com/en/rest/meta/meta#get-the-zen-of-github",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Zen of GitHub",
+          "path": "https://api.github.com/zen",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": null,
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "github",
+        "developer",
+        "philosophy"
+      ],
+      "license": "GitHub Terms",
+      "rate_limit": "60 requests/hour unauthenticated"
+    },
+    {
+      "id": "dns-google",
+      "name": "Google Public DNS over HTTPS",
+      "description": "Fast, private DNS resolution via JSON-formatted DNS-over-HTTPS (DoH).",
+      "category": "Developer Tools",
+      "homepage": "https://developers.google.com/speed/public-dns",
+      "documentation": "https://developers.google.com/speed/public-dns/docs/doh/json",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Resolve Example.com",
+          "path": "https://dns.google/resolve?name=example.com&type=A",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "dns",
+        "networking",
+        "infrastructure"
+      ],
+      "license": "Google Terms",
+      "rate_limit": "Polite non-commercial use"
+    },
+    {
+      "id": "httpbin",
+      "name": "HTTPBin Test Suite",
+      "description": "HTTP request and response testing service for testing headers, status codes, and IP inspection.",
+      "category": "Developer Tools",
+      "homepage": "https://httpbin.org",
+      "documentation": "https://httpbin.org",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Get Request Echo",
+          "path": "https://httpbin.org/get",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "testing",
+        "http",
+        "developer-tools"
+      ],
+      "license": "MIT",
+      "rate_limit": "Polite non-commercial use"
+    },
+    {
+      "id": "uuid-generator",
+      "name": "UUIDTools Generator",
+      "description": "REST API for generating random RFC 4122 compliant UUIDs (v1, v4).",
+      "category": "Developer Tools",
+      "homepage": "https://www.uuidtools.com",
+      "documentation": "https://www.uuidtools.com/docs",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Generate UUID v4",
+          "path": "https://www.uuidtools.com/api/generate/v4",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "uuid",
+        "developer-tools",
+        "identifiers"
+      ],
+      "license": "Free Public API",
+      "rate_limit": "Polite non-commercial use"
+    },
+    {
+      "id": "ipify",
+      "name": "ipify Public IP Address API",
+      "description": "Simple public IP address API that returns client public IP as JSON without authentication.",
+      "category": "Developer Tools",
+      "homepage": "https://www.ipify.org",
+      "documentation": "https://www.ipify.org",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Public IPv4 Address",
+          "path": "https://api.ipify.org?format=json",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "ip",
+        "networking",
+        "utilities"
+      ],
+      "license": "CC0-1.0",
+      "rate_limit": "Unlimited unmetered access"
+    },
+    {
+      "id": "open-trivia",
+      "name": "Open Trivia Database",
+      "description": "Free user-contributed trivia question database for games and quizzes.",
+      "category": "Entertainment & Media",
+      "homepage": "https://opentdb.com",
+      "documentation": "https://opentdb.com/api_config.php",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Random Trivia Question",
+          "path": "https://opentdb.com/api.php?amount=1",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "trivia",
+        "quiz",
+        "games"
+      ],
+      "license": "CC-BY-SA-4.0",
+      "rate_limit": "1 request/5 seconds"
+    },
+    {
+      "id": "pokeapi",
+      "name": "PokéAPI",
+      "description": "Highly structured RESTful Pokémon data covering species, moves, abilities, and types.",
+      "category": "Entertainment & Media",
+      "homepage": "https://pokeapi.co",
+      "documentation": "https://pokeapi.co/docs/v2",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Lookup Pikachu",
+          "path": "https://pokeapi.co/api/v2/pokemon/pikachu",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "pokemon",
+        "gaming",
+        "entertainment"
+      ],
+      "license": "BSD-3-Clause",
+      "rate_limit": "100 requests/minute"
+    },
+    {
+      "id": "rick-and-morty",
+      "name": "The Rick and Morty API",
+      "description": "REST and GraphQL API based on the television show Rick and Morty.",
+      "category": "Entertainment & Media",
+      "homepage": "https://rickandmortyapi.com",
+      "documentation": "https://rickandmortyapi.com/documentation",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Character Rick Sanchez",
+          "path": "https://rickandmortyapi.com/api/character/1",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "animation",
+        "entertainment",
+        "pop-culture"
+      ],
+      "license": "BSD-3-Clause",
+      "rate_limit": "10,000 requests/day"
+    },
+    {
+      "id": "binance-ticker",
+      "name": "Binance Public Ticker",
+      "description": "Public spot market price ticker for top digital assets.",
+      "category": "Finance & Economics",
+      "homepage": "https://www.binance.com",
+      "documentation": "https://developers.binance.com/docs/binance-spot-api-docs",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "BTCUSDT Ticker",
+          "path": "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "crypto",
+        "market-prices",
+        "trading"
+      ],
+      "license": "Proprietary Public Endpoint",
+      "rate_limit": "1200 request weight/minute"
+    },
+    {
+      "id": "coingecko-public",
+      "name": "CoinGecko Public Ping",
+      "description": "Independent cryptocurrency market data and health ping endpoint.",
+      "category": "Finance & Economics",
+      "homepage": "https://www.coingecko.com",
+      "documentation": "https://docs.coingecko.com/reference/ping-server",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Server Ping",
+          "path": "https://api.coingecko.com/api/v3/ping",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "crypto",
+        "bitcoin",
+        "market-data"
+      ],
+      "license": "Custom Free Tier",
+      "rate_limit": "30 calls/minute"
+    },
+    {
+      "id": "frankfurter",
+      "name": "Frankfurter Currency Rates",
+      "description": "Open-source foreign exchange reference rates published by the European Central Bank.",
+      "category": "Finance & Economics",
+      "homepage": "https://www.frankfurter.app",
+      "documentation": "https://www.frankfurter.app/docs/",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Latest EUR Rates",
+          "path": "https://api.frankfurter.app/latest",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "forex",
+        "currency",
+        "ecb",
+        "exchange-rates"
+      ],
+      "license": "CC0-1.0",
+      "rate_limit": "Unrestricted polite use"
+    },
+    {
+      "id": "open-food-facts",
+      "name": "Open Food Facts",
+      "description": "Collaborative database of food products with ingredients, allergens, and nutrition facts.",
+      "category": "Food & Nutrition",
+      "homepage": "https://world.openfoodfacts.org",
+      "documentation": "https://openfoodfacts.github.io/api-documentation/",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Nutella Barcode Lookup",
+          "path": "https://world.openfoodfacts.org/api/v2/product/3017620422003.json",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "food",
+        "nutrition",
+        "allergens",
+        "barcodes"
+      ],
+      "license": "ODbL 1.0",
+      "rate_limit": "100 requests/minute"
+    },
+    {
+      "id": "ip-api",
+      "name": "IP-API Geolocation",
+      "description": "Free IP geolocation API providing country, city, ISP, and coordinates for public IPv4/IPv6.",
+      "category": "Geocoding & Maps",
+      "homepage": "https://ip-api.com",
+      "documentation": "https://ip-api.com/docs",
+      "auth": "none",
+      "https": false,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "IP Lookup Google DNS",
+          "path": "http://ip-api.com/json/8.8.8.8",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "ip",
+        "geolocation",
+        "networking"
+      ],
+      "license": "Proprietary Free Tier",
+      "rate_limit": "45 requests/minute"
+    },
+    {
+      "id": "nominatim",
+      "name": "OpenStreetMap Nominatim",
+      "description": "Search OpenStreetMap data by name and address (geocoding) and generate synthetic addresses.",
+      "category": "Geocoding & Maps",
+      "homepage": "https://nominatim.org",
+      "documentation": "https://nominatim.org/release-docs/latest/api/Overview/",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Search Paris",
+          "path": "https://nominatim.openstreetmap.org/search?q=Paris&format=json&limit=1",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "geocoding",
+        "osm",
+        "coordinates",
+        "maps"
+      ],
+      "license": "ODbL 1.0",
+      "rate_limit": "1 request/second"
+    },
+    {
+      "id": "zippopotam",
+      "name": "Zippopotam.us",
+      "description": "Postal code and zip code lookup API covering over 60 countries.",
+      "category": "Geocoding & Maps",
+      "homepage": "https://www.zippopotam.us",
+      "documentation": "https://www.zippopotam.us",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Lookup US Beverly Hills",
+          "path": "https://api.zippopotam.us/us/90210",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "postal-codes",
+        "zipcodes",
+        "geography"
+      ],
+      "license": "CC-BY-3.0",
+      "rate_limit": "Unmetered polite use"
+    },
+    {
+      "id": "data-gov-catalog",
+      "name": "Data.gov CKAN Catalog",
+      "description": "National catalog metadata API for thousands of open United States federal datasets.",
+      "category": "Government & Open Data",
+      "homepage": "https://data.gov",
+      "documentation": "https://data.gov/developers/apis/",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Search Package Datasets",
+          "path": "https://catalog.data.gov/api/3/action/package_search?rows=1",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "open-data",
+        "government",
+        "ckan",
+        "catalogs"
+      ],
+      "license": "Public Domain",
+      "rate_limit": "Polite non-commercial use"
+    },
+    {
+      "id": "us-census",
+      "name": "US Census Bureau Demographic Data",
+      "description": "Official public population and demographic statistics from the United States Census Bureau.",
+      "category": "Government & Open Data",
+      "homepage": "https://www.census.gov",
+      "documentation": "https://www.census.gov/data/developers/data-sets.html",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "2020 Census Variables",
+          "path": "https://api.census.gov/data/2020/dec/pl/variables.json",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "census",
+        "demographics",
+        "government",
+        "statistics"
+      ],
+      "license": "Public Domain (US Government)",
+      "rate_limit": "500 requests/day unauthenticated"
+    },
+    {
+      "id": "disease-sh",
+      "name": "Disease.sh Open Disease Data",
+      "description": "Open API for current disease outbreak tracking and global vaccine statistics.",
+      "category": "Health & Medicine",
+      "homepage": "https://disease.sh",
+      "documentation": "https://disease.sh/docs/",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Global Summary",
+          "path": "https://disease.sh/v3/covid-19/all",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "health",
+        "epidemiology",
+        "global"
+      ],
+      "license": "GPL-3.0",
+      "rate_limit": "Polite non-commercial use"
+    },
+    {
+      "id": "openfda",
+      "name": "openFDA Drug Safety & Recalls",
+      "description": "Open health data platform providing access to FDA adverse event reports and recalls.",
+      "category": "Health & Medicine",
+      "homepage": "https://open.fda.gov",
+      "documentation": "https://open.fda.gov/apis/",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Drug Event Sample",
+          "path": "https://api.fda.gov/drug/event.json?limit=1",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "fda",
+        "medicine",
+        "health",
+        "pharmaceuticals"
+      ],
+      "license": "CC0-1.0",
+      "rate_limit": "240 requests/minute without key"
+    },
+    {
+      "id": "nasa-apod",
+      "name": "NASA Imagery and Astronomy",
+      "description": "Search official NASA media archives and astronomy photographs with no API key required.",
+      "category": "Science & Space",
+      "homepage": "https://images.nasa.gov",
+      "documentation": "https://images.nasa.gov/docs/images.nasa.gov_api_docs.pdf",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Search Apollo Mission Photos",
+          "path": "https://images-api.nasa.gov/search?q=apollo%2011&media_type=image",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "astronomy",
+        "nasa",
+        "space",
+        "images"
+      ],
+      "license": "Public Domain",
+      "rate_limit": "30 requests/hour (DEMO_KEY)"
+    },
+    {
+      "id": "spacex-api",
+      "name": "SpaceX Public REST API",
+      "description": "Open source REST API for historical rocket launches, capsules, and orbital mission data.",
+      "category": "Science & Space",
+      "homepage": "https://github.com/r-spacex/SpaceX-API",
+      "documentation": "https://github.com/r-spacex/SpaceX-API/blob/master/docs/README.md",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Latest Launch",
+          "path": "https://api.spacexdata.com/v4/launches/latest",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "space",
+        "rockets",
+        "spacex",
+        "aerospace"
+      ],
+      "license": "MIT",
+      "rate_limit": "50 requests/second"
+    },
+    {
+      "id": "usgs-earthquakes",
+      "name": "USGS Earthquake Hazards",
+      "description": "Real-time seismic event and earthquake data feeds from the United States Geological Survey.",
+      "category": "Science & Space",
+      "homepage": "https://earthquake.usgs.gov",
+      "documentation": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Significant Earthquakes Past 30 Days",
+          "path": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "earthquakes",
+        "geology",
+        "usgs",
+        "science"
+      ],
+      "license": "Public Domain (US Government)",
+      "rate_limit": "Polite non-abusive use"
+    },
+    {
+      "id": "open-meteo",
+      "name": "Open-Meteo Weather Forecast",
+      "description": "High-resolution open-source weather forecast API without required API keys.",
+      "category": "Weather & Climate",
+      "homepage": "https://open-meteo.com",
+      "documentation": "https://open-meteo.com/en/docs",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "Current Weather Berlin",
+          "path": "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": "json",
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "weather",
+        "forecast",
+        "meteorology",
+        "climate"
+      ],
+      "license": "CC-BY-4.0",
+      "rate_limit": "10,000 requests/day"
+    },
+    {
+      "id": "wttr-in",
+      "name": "wttr.in Weather Service",
+      "description": "Console-oriented and JSON-capable weather forecast service.",
+      "category": "Weather & Climate",
+      "homepage": "https://wttr.in",
+      "documentation": "https://github.com/chubin/wttr.in",
+      "auth": "none",
+      "https": true,
+      "cors": true,
+      "endpoints": [
+        {
+          "name": "London JSON Weather",
+          "path": "https://wttr.in/London?format=j1",
+          "method": "GET",
+          "expected_status": 200,
+          "expected_content_type": null,
+          "headers": {}
+        }
+      ],
+      "tags": [
+        "weather",
+        "terminal",
+        "climate"
+      ],
+      "license": "Apache-2.0",
+      "rate_limit": "Polite non-commercial use"
+    }
+  ]
+}

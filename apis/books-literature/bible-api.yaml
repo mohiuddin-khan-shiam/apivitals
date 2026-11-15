@@ -1,0 +1,21 @@
+id: bible-api
+name: Bible API Public Scripture
+description: Free public JSON API for retrieving public domain Bible passages and verses.
+category: Books & Literature
+homepage: https://bible-api.com
+documentation: https://bible-api.com
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Sample Scripture
+    path: https://bible-api.com/john+3:16
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - scripture
+  - religion
+  - literature
+license: Public Domain
+rate_limit: Polite non-commercial use

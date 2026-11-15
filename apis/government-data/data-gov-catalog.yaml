@@ -1,0 +1,22 @@
+id: data-gov-catalog
+name: Data.gov CKAN Catalog
+description: National catalog metadata API for thousands of open United States federal datasets.
+category: Government & Open Data
+homepage: https://data.gov
+documentation: https://data.gov/developers/apis/
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Search Package Datasets
+    path: https://catalog.data.gov/api/3/action/package_search?rows=1
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - open-data
+  - government
+  - ckan
+  - catalogs
+license: Public Domain
+rate_limit: Polite non-commercial use

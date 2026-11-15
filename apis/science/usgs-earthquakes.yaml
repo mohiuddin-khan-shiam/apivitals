@@ -1,0 +1,22 @@
+id: usgs-earthquakes
+name: USGS Earthquake Hazards
+description: Real-time seismic event and earthquake data feeds from the United States Geological Survey.
+category: Science & Space
+homepage: https://earthquake.usgs.gov
+documentation: https://earthquake.usgs.gov/fdsnws/event/1/
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Significant Earthquakes Past 30 Days
+    path: https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - earthquakes
+  - geology
+  - usgs
+  - science
+license: Public Domain (US Government)
+rate_limit: Polite non-abusive use

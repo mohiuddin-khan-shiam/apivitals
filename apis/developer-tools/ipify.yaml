@@ -1,0 +1,21 @@
+id: ipify
+name: ipify Public IP Address API
+description: Simple public IP address API that returns client public IP as JSON without authentication.
+category: Developer Tools
+homepage: https://www.ipify.org
+documentation: https://www.ipify.org
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Public IPv4 Address
+    path: https://api.ipify.org?format=json
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - ip
+  - networking
+  - utilities
+license: CC0-1.0
+rate_limit: Unlimited unmetered access

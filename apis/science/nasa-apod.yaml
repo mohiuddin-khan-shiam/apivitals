@@ -1,0 +1,22 @@
+id: nasa-apod
+name: NASA Imagery and Astronomy
+description: Search official NASA media archives and astronomy photographs with no API key required.
+category: Science & Space
+homepage: https://images.nasa.gov
+documentation: https://images.nasa.gov/docs/images.nasa.gov_api_docs.pdf
+auth: none
+https: true
+cors: true
+endpoints:
+  - name: Search Apollo Mission Photos
+    path: https://images-api.nasa.gov/search?q=apollo%2011&media_type=image
+    method: GET
+    expected_status: 200
+    expected_content_type: json
+tags:
+  - astronomy
+  - nasa
+  - space
+  - images
+license: Public Domain
+rate_limit: 30 requests/hour (DEMO_KEY)
