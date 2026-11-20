@@ -29,6 +29,12 @@
       "is_healthy": false,
       "latency_ms": 10027.85,
       "status_code": null
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": false,
+      "latency_ms": 10034.26,
+      "status_code": null
     }
   ],
   "open-library": [
@@ -60,6 +66,12 @@
       "date": "2026-11-19",
       "is_healthy": true,
       "latency_ms": 461.65,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 488.94,
       "status_code": 200
     }
   ],
@@ -93,6 +105,12 @@
       "is_healthy": true,
       "latency_ms": 236.07,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 165.66,
+      "status_code": 200
     }
   ],
   "github-zen": [
@@ -124,6 +142,12 @@
       "date": "2026-11-19",
       "is_healthy": true,
       "latency_ms": 158.98,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 195.85,
       "status_code": 200
     }
   ],
@@ -157,6 +181,12 @@
       "is_healthy": true,
       "latency_ms": 31.9,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 30.09,
+      "status_code": 200
     }
   ],
   "httpbin": [
@@ -188,6 +218,12 @@
       "date": "2026-11-19",
       "is_healthy": true,
       "latency_ms": 16.06,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 25.27,
       "status_code": 200
     }
   ],
@@ -221,6 +257,12 @@
       "is_healthy": true,
       "latency_ms": 152.99,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 153.15,
+      "status_code": 200
     }
   ],
   "open-trivia": [
@@ -252,6 +294,12 @@
       "date": "2026-11-19",
       "is_healthy": true,
       "latency_ms": 147.06,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 85.67,
       "status_code": 200
     }
   ],
@@ -285,6 +333,12 @@
       "is_healthy": true,
       "latency_ms": 61.7,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 43.32,
+      "status_code": 200
     }
   ],
   "rick-and-morty": [
@@ -316,6 +370,12 @@
       "date": "2026-11-19",
       "is_healthy": true,
       "latency_ms": 143.9,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 39.66,
       "status_code": 200
     }
   ],
@@ -349,6 +409,12 @@
       "is_healthy": false,
       "latency_ms": 21.3,
       "status_code": 451
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": false,
+      "latency_ms": 111.38,
+      "status_code": 451
     }
   ],
   "coingecko-public": [
@@ -380,6 +446,12 @@
       "date": "2026-11-19",
       "is_healthy": true,
       "latency_ms": 63.07,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 64.62,
       "status_code": 200
     }
   ],
@@ -413,6 +485,12 @@
       "is_healthy": true,
       "latency_ms": 333.92,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 302.85,
+      "status_code": 200
     }
   ],
   "open-food-facts": [
@@ -444,6 +522,12 @@
       "date": "2026-11-19",
       "is_healthy": true,
       "latency_ms": 586.96,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 540.87,
       "status_code": 200
     }
   ],
@@ -477,6 +561,12 @@
       "is_healthy": true,
       "latency_ms": 105.96,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 100.24,
+      "status_code": 200
     }
   ],
   "nominatim": [
@@ -508,6 +598,12 @@
       "date": "2026-11-19",
       "is_healthy": true,
       "latency_ms": 654.88,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 537.33,
       "status_code": 200
     }
   ],
@@ -541,6 +637,12 @@
       "is_healthy": true,
       "latency_ms": 72.17,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 74.5,
+      "status_code": 200
     }
   ],
   "data-gov-catalog": [
@@ -572,6 +674,12 @@
       "date": "2026-11-19",
       "is_healthy": false,
       "latency_ms": 101.62,
+      "status_code": 404
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": false,
+      "latency_ms": 100.52,
       "status_code": 404
     }
   ],
@@ -605,6 +713,12 @@
       "is_healthy": true,
       "latency_ms": 82.3,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 46.3,
+      "status_code": 200
     }
   ],
   "disease-sh": [
@@ -636,6 +750,12 @@
       "date": "2026-11-19",
       "is_healthy": true,
       "latency_ms": 155.36,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 390.15,
       "status_code": 200
     }
   ],
@@ -669,6 +789,12 @@
       "is_healthy": true,
       "latency_ms": 2621.08,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 2488.47,
+      "status_code": 200
     }
   ],
   "nasa-apod": [
@@ -700,6 +826,12 @@
       "date": "2026-11-19",
       "is_healthy": true,
       "latency_ms": 563.08,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 544.11,
       "status_code": 200
     }
   ],
@@ -733,6 +865,12 @@
       "is_healthy": false,
       "latency_ms": 10014.88,
       "status_code": null
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": false,
+      "latency_ms": 10016.68,
+      "status_code": null
     }
   ],
   "usgs-earthquakes": [
@@ -764,6 +902,12 @@
       "date": "2026-11-19",
       "is_healthy": true,
       "latency_ms": 49.12,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 53.59,
       "status_code": 200
     }
   ],
@@ -797,6 +941,12 @@
       "is_healthy": true,
       "latency_ms": 93.48,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 125.65,
+      "status_code": 200
     }
   ],
   "wttr-in": [
@@ -828,6 +978,12 @@
       "date": "2026-11-19",
       "is_healthy": true,
       "latency_ms": 491.58,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 523.58,
       "status_code": 200
     }
   ],
@@ -861,6 +1017,12 @@
       "is_healthy": true,
       "latency_ms": 64.43,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 49.08,
+      "status_code": 200
     }
   ],
   "ipify": [
@@ -892,6 +1054,12 @@
       "date": "2026-11-19",
       "is_healthy": true,
       "latency_ms": 29.94,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-20",
+      "is_healthy": true,
+      "latency_ms": 38.48,
       "status_code": 200
     }
   ]
