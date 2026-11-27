@@ -71,6 +71,12 @@
       "is_healthy": false,
       "latency_ms": 10032.61,
       "status_code": null
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": false,
+      "latency_ms": 10032.48,
+      "status_code": null
     }
   ],
   "open-library": [
@@ -144,6 +150,12 @@
       "date": "2026-11-26",
       "is_healthy": true,
       "latency_ms": 342.0,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 395.89,
       "status_code": 200
     }
   ],
@@ -219,6 +231,12 @@
       "is_healthy": true,
       "latency_ms": 726.59,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 277.99,
+      "status_code": 200
     }
   ],
   "github-zen": [
@@ -292,6 +310,12 @@
       "date": "2026-11-26",
       "is_healthy": true,
       "latency_ms": 164.86,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 167.56,
       "status_code": 200
     }
   ],
@@ -367,6 +391,12 @@
       "is_healthy": true,
       "latency_ms": 76.74,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 142.49,
+      "status_code": 200
     }
   ],
   "httpbin": [
@@ -440,6 +470,12 @@
       "date": "2026-11-26",
       "is_healthy": true,
       "latency_ms": 117.02,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 110.54,
       "status_code": 200
     }
   ],
@@ -515,6 +551,12 @@
       "is_healthy": true,
       "latency_ms": 311.88,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 325.12,
+      "status_code": 200
     }
   ],
   "open-trivia": [
@@ -588,6 +630,12 @@
       "date": "2026-11-26",
       "is_healthy": true,
       "latency_ms": 201.08,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 213.24,
       "status_code": 200
     }
   ],
@@ -663,6 +711,12 @@
       "is_healthy": true,
       "latency_ms": 48.24,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 58.48,
+      "status_code": 200
     }
   ],
   "rick-and-morty": [
@@ -736,6 +790,12 @@
       "date": "2026-11-26",
       "is_healthy": true,
       "latency_ms": 46.48,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 47.69,
       "status_code": 200
     }
   ],
@@ -811,6 +871,12 @@
       "is_healthy": false,
       "latency_ms": 86.09,
       "status_code": 451
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": false,
+      "latency_ms": 108.34,
+      "status_code": 451
     }
   ],
   "coingecko-public": [
@@ -884,6 +950,12 @@
       "date": "2026-11-26",
       "is_healthy": true,
       "latency_ms": 62.53,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 64.41,
       "status_code": 200
     }
   ],
@@ -959,6 +1031,12 @@
       "is_healthy": true,
       "latency_ms": 411.39,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 412.03,
+      "status_code": 200
     }
   ],
   "open-food-facts": [
@@ -1032,6 +1110,12 @@
       "date": "2026-11-26",
       "is_healthy": true,
       "latency_ms": 600.26,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 646.41,
       "status_code": 200
     }
   ],
@@ -1107,6 +1191,12 @@
       "is_healthy": true,
       "latency_ms": 73.93,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 76.37,
+      "status_code": 200
     }
   ],
   "nominatim": [
@@ -1180,6 +1270,12 @@
       "date": "2026-11-26",
       "is_healthy": true,
       "latency_ms": 32.93,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 674.28,
       "status_code": 200
     }
   ],
@@ -1255,6 +1351,12 @@
       "is_healthy": true,
       "latency_ms": 97.98,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 78.68,
+      "status_code": 200
     }
   ],
   "data-gov-catalog": [
@@ -1328,6 +1430,12 @@
       "date": "2026-11-26",
       "is_healthy": false,
       "latency_ms": 114.98,
+      "status_code": 404
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": false,
+      "latency_ms": 131.07,
       "status_code": 404
     }
   ],
@@ -1403,6 +1511,12 @@
       "is_healthy": true,
       "latency_ms": 120.59,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 106.21,
+      "status_code": 200
     }
   ],
   "disease-sh": [
@@ -1476,6 +1590,12 @@
       "date": "2026-11-26",
       "is_healthy": true,
       "latency_ms": 185.4,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 827.53,
       "status_code": 200
     }
   ],
@@ -1551,6 +1671,12 @@
       "is_healthy": true,
       "latency_ms": 2079.96,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 2145.64,
+      "status_code": 200
     }
   ],
   "nasa-apod": [
@@ -1624,6 +1750,12 @@
       "date": "2026-11-26",
       "is_healthy": true,
       "latency_ms": 576.34,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 598.26,
       "status_code": 200
     }
   ],
@@ -1699,6 +1831,12 @@
       "is_healthy": false,
       "latency_ms": 10021.62,
       "status_code": null
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": false,
+      "latency_ms": 10022.34,
+      "status_code": null
     }
   ],
   "usgs-earthquakes": [
@@ -1772,6 +1910,12 @@
       "date": "2026-11-26",
       "is_healthy": true,
       "latency_ms": 69.02,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 60.98,
       "status_code": 200
     }
   ],
@@ -1847,6 +1991,12 @@
       "is_healthy": true,
       "latency_ms": 147.25,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 152.08,
+      "status_code": 200
     }
   ],
   "wttr-in": [
@@ -1920,6 +2070,12 @@
       "date": "2026-11-26",
       "is_healthy": true,
       "latency_ms": 660.72,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 674.29,
       "status_code": 200
     }
   ],
@@ -1995,6 +2151,12 @@
       "is_healthy": true,
       "latency_ms": 189.79,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 142.2,
+      "status_code": 200
     }
   ],
   "ipify": [
@@ -2068,6 +2230,12 @@
       "date": "2026-11-26",
       "is_healthy": true,
       "latency_ms": 65.92,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-27",
+      "is_healthy": true,
+      "latency_ms": 73.3,
       "status_code": 200
     }
   ]
