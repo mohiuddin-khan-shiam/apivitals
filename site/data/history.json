@@ -77,6 +77,12 @@
       "is_healthy": false,
       "latency_ms": 10032.48,
       "status_code": null
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": false,
+      "latency_ms": 10023.17,
+      "status_code": null
     }
   ],
   "open-library": [
@@ -156,6 +162,12 @@
       "date": "2026-11-27",
       "is_healthy": true,
       "latency_ms": 395.89,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 253.78,
       "status_code": 200
     }
   ],
@@ -237,6 +249,12 @@
       "is_healthy": true,
       "latency_ms": 277.99,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 3554.15,
+      "status_code": 200
     }
   ],
   "github-zen": [
@@ -317,6 +335,12 @@
       "is_healthy": true,
       "latency_ms": 167.56,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": false,
+      "latency_ms": 75.21,
+      "status_code": 403
     }
   ],
   "dns-google": [
@@ -396,6 +420,12 @@
       "date": "2026-11-27",
       "is_healthy": true,
       "latency_ms": 142.49,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 49.99,
       "status_code": 200
     }
   ],
@@ -477,6 +507,12 @@
       "is_healthy": true,
       "latency_ms": 110.54,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 190.56,
+      "status_code": 200
     }
   ],
   "uuid-generator": [
@@ -556,6 +592,12 @@
       "date": "2026-11-27",
       "is_healthy": true,
       "latency_ms": 325.12,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 449.83,
       "status_code": 200
     }
   ],
@@ -637,6 +679,12 @@
       "is_healthy": true,
       "latency_ms": 213.24,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 289.82,
+      "status_code": 200
     }
   ],
   "pokeapi": [
@@ -716,6 +764,12 @@
       "date": "2026-11-27",
       "is_healthy": true,
       "latency_ms": 58.48,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 93.26,
       "status_code": 200
     }
   ],
@@ -797,6 +851,12 @@
       "is_healthy": true,
       "latency_ms": 47.69,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 266.4,
+      "status_code": 200
     }
   ],
   "binance-ticker": [
@@ -876,6 +936,12 @@
       "date": "2026-11-27",
       "is_healthy": false,
       "latency_ms": 108.34,
+      "status_code": 451
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": false,
+      "latency_ms": 57.47,
       "status_code": 451
     }
   ],
@@ -957,6 +1023,12 @@
       "is_healthy": true,
       "latency_ms": 64.41,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 118.58,
+      "status_code": 200
     }
   ],
   "frankfurter": [
@@ -1036,6 +1108,12 @@
       "date": "2026-11-27",
       "is_healthy": true,
       "latency_ms": 412.03,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 488.67,
       "status_code": 200
     }
   ],
@@ -1117,6 +1195,12 @@
       "is_healthy": true,
       "latency_ms": 646.41,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 771.53,
+      "status_code": 200
     }
   ],
   "ip-api": [
@@ -1196,6 +1280,12 @@
       "date": "2026-11-27",
       "is_healthy": true,
       "latency_ms": 76.37,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 21.68,
       "status_code": 200
     }
   ],
@@ -1277,6 +1367,12 @@
       "is_healthy": true,
       "latency_ms": 674.28,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 22.3,
+      "status_code": 200
     }
   ],
   "zippopotam": [
@@ -1356,6 +1452,12 @@
       "date": "2026-11-27",
       "is_healthy": true,
       "latency_ms": 78.68,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 90.01,
       "status_code": 200
     }
   ],
@@ -1437,6 +1539,12 @@
       "is_healthy": false,
       "latency_ms": 131.07,
       "status_code": 404
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": false,
+      "latency_ms": 61.87,
+      "status_code": 404
     }
   ],
   "us-census": [
@@ -1516,6 +1624,12 @@
       "date": "2026-11-27",
       "is_healthy": true,
       "latency_ms": 106.21,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 218.28,
       "status_code": 200
     }
   ],
@@ -1597,6 +1711,12 @@
       "is_healthy": true,
       "latency_ms": 827.53,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 824.35,
+      "status_code": 200
     }
   ],
   "openfda": [
@@ -1676,6 +1796,12 @@
       "date": "2026-11-27",
       "is_healthy": true,
       "latency_ms": 2145.64,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 2533.27,
       "status_code": 200
     }
   ],
@@ -1757,6 +1883,12 @@
       "is_healthy": true,
       "latency_ms": 598.26,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 634.95,
+      "status_code": 200
     }
   ],
   "spacex-api": [
@@ -1836,6 +1968,12 @@
       "date": "2026-11-27",
       "is_healthy": false,
       "latency_ms": 10022.34,
+      "status_code": null
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": false,
+      "latency_ms": 10019.86,
       "status_code": null
     }
   ],
@@ -1917,6 +2055,12 @@
       "is_healthy": true,
       "latency_ms": 60.98,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 41.46,
+      "status_code": 200
     }
   ],
   "open-meteo": [
@@ -1996,6 +2140,12 @@
       "date": "2026-11-27",
       "is_healthy": true,
       "latency_ms": 152.08,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 78.1,
       "status_code": 200
     }
   ],
@@ -2077,6 +2227,12 @@
       "is_healthy": true,
       "latency_ms": 674.29,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 768.86,
+      "status_code": 200
     }
   ],
   "bible-api": [
@@ -2157,6 +2313,12 @@
       "is_healthy": true,
       "latency_ms": 142.2,
       "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 265.09,
+      "status_code": 200
     }
   ],
   "ipify": [
@@ -2236,6 +2398,12 @@
       "date": "2026-11-27",
       "is_healthy": true,
       "latency_ms": 73.3,
+      "status_code": 200
+    },
+    {
+      "date": "2026-11-28",
+      "is_healthy": true,
+      "latency_ms": 90.28,
       "status_code": 200
     }
   ]
